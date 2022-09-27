@@ -1,0 +1,901 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    
+    cursor: default;
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    
+  }
+
+
+h1,h2,h3{
+
+font-family: 'Oswald', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+
+}
+
+p{
+    font-size: small;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+#head{
+    background-color:antiquewhite;
+}
+
+.top-menu{
+    width: 1000px;
+    height: 50px;
+    margin: auto;
+}
+
+.contact{
+    
+    float: left;
+    padding-top: 15px;
+    text-align: center;
+    
+}
+.contact span{
+    font-size: medium;
+    margin-left: 10px;
+   
+}
+.contact i{
+    color: orangered;
+    margin-right: 20px;
+    font-size: 20px;
+    
+}
+.social{
+
+    float: right;
+    margin-right: 0px;
+
+}
+
+.social i{
+    margin-left: 15px;
+    padding: 10px;
+    border-right: 1px #777 solid;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.social i:hover{
+   color: orangered;
+}
+
+.navbar{
+    width: 1000px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.logo{
+    float: left;
+}
+
+#nav-link{
+    float: right;
+}
+
+#nav-link li{
+    list-style-type: none;
+    padding: 10px;
+    float: left;
+    margin-left: 5px;
+    
+    transition: 0.4s;
+}
+
+#nav-link li a{
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+#nav-link li a i{
+    margin-left: 5px;
+    color: orangered;
+}
+
+#home{
+    color: orangered;
+}
+
+#nav-link li:hover{
+  background-color: aqua;
+  border-radius: 5px;
+}
+
+.slide-section{
+
+    background-image: url("./image/construction.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.slide-des{
+    color: white;
+    width: 800px;
+
+
+}
+.slide-des h1{
+    width: 500px;
+    padding-top: 100px;
+}
+
+.slide-des p{
+    width: 300px;
+    font-size: 15px;
+    padding-bottom: 80px;
+
+    padding-top: 20px;
+}
+
+button{
+    padding: 16px 30px;
+    font-size: large;
+    font-weight: bold;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+   
+}
+
+button:hover{
+    background-color:#201e1ecd ;
+}
+
+.circle{
+    margin-top: -40px;
+    margin-left: 50%;
+    text-align: center;
+}
+.div1{
+    float: left;
+    width: 18px;
+    height: 18px;
+    border: 3px white solid;
+    border-radius: 100%;
+   background-color: orangered;
+
+}
+
+.div2{
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    border: 3px white solid;
+    border-radius: 100%;
+    background-color: orangered;
+
+}
+
+.architek{
+    padding: 10px;
+    border: 1px #999 solid;
+}
+
+.architek:hover{
+    background-color: orangered;
+    color: white;
+}
+
+#engin{
+   
+    color: orangered;
+}
+#engin:hover{
+    color: white;
+}
+
+#span:hover{
+    color: white;
+
+}
+
+.skill-develop{
+ 
+    width: 400px;
+    padding: 10px;
+  }
+  
+  .skill-develop li{
+     
+      list-style-type: none;
+      margin: 50px 0px;
+      font-size: 20px;
+      font-weight: bolder;
+      text-transform: uppercase;
+      margin-left: 0px;
+      position: relative;
+      color: #333;
+  
+  }
+  
+  .skill-develop li::before{
+      content:'';
+      position: absolute;
+  
+      background-color: rgb(170,167,173);
+      width: 100%;
+      height: 25px;
+      top: calc(100% + 5px);
+      left: 0;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      
+  }
+  
+  .skill-develop li::after{
+      content:'';
+      position: absolute;
+      background-color: rgb(250, 250,249);
+      width: 0%;
+      height: 25px;
+      top: calc(100% + 5px);
+      left: 0;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      
+      animation-duration: 5s;
+      animation-timing-function:linear;
+      animation-delay: 1s;
+      animation-iteration-count:3s;
+      /* animation-direction: forward;  */
+      animation-fill-mode: forwards;
+  }
+  
+  .skill-develop li.html::after{
+      animation-name:bayzed;
+  
+  }
+  
+  .skill-develop li.css::after{
+      animation-name:css;
+  
+  }
+  .skill-develop li.bs5::after{
+      animation-name:bs5;
+  
+  }
+  
+  .skill-develop li.js::after{
+      animation-name:js;
+  
+  }
+  
+  .skill-develop li.cplus::after{
+      animation-name:cplus;
+  
+  }
+  
+  .skill-develop li.React::after{
+      animation-name:React;
+  
+  }
+  @keyframes bayzed{
+  
+      to{
+         width:90%;
+         background-color: orange;
+      }
+  }
+  
+  @keyframes css{
+  
+      to{
+         width:80%;
+         background-color: yellow;
+      }
+  }
+  @keyframes bs5{
+  
+      to{
+         width:75%;
+         background-color: yellowgreen;
+      }
+  }
+  
+  @keyframes js{
+  
+      to{
+         width:70%;
+         background-color: chartreuse;
+      }
+  }
+  @keyframes cplus{
+  
+      to{
+         width:85%;
+         background-color: cyan;
+      }
+  }
+
+
+  #span{
+    color: orangered;
+  }
+
+
+  .card:hover{
+    background-color: orangered;
+    color: white;
+  }
+.image img{
+   width: 400px;
+   margin-left: 50px;
+}
+
+.des-head{
+    color: white;
+}
+
+
+.des-head h3{
+    margin-top: 40px;
+   margin-left: 30px;
+}
+
+
+.des-head p{
+    margin-top: 40px;
+   margin-left: 30px;
+   letter-spacing: 1.5px;
+   padding-bottom: 20px;
+}
+
+.des-icon{
+    float: left;
+}
+
+.div3{
+  
+    display: flex;
+    padding-bottom: 60px;
+}
+.div3 i{
+    color: orangered;
+    font-size: 50px;
+    margin-left: 30px;
+
+}
+.icon-des{
+    color: white;
+    margin-left: 40px;
+}
+
+
+
+
+.des-icons{
+    float: right;
+    margin-right: 50px;
+}
+
+.div4{
+ 
+    display: flex;
+    padding-bottom: 60px;
+}
+.div4 i{
+    color: orangered;
+    font-size: 50px;
+
+
+}
+.icons-des{
+    color: white;
+    margin-left: 40px;
+}
+.hr-style{
+    border-bottom: 5px red solid;
+    width: 120px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.projects p{
+    font-size: medium;
+    width: 400px;
+    margin: auto;
+}
+
+.nav-bar{
+    width: 500px;
+    justify-content: center;
+    background-color: rgb(32, 15, 48);
+    margin: auto;
+  
+}
+
+.nav-bar ul{
+   
+}
+
+.nav-bar ul li{
+   text-align: center;
+   float: left;
+   margin: auto;
+   padding: 10px;
+   list-style-type: none
+
+   
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.nav-bar ul li a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+#all{
+    background-color: blueviolet;
+}
+
+.card{
+    width: 300px;
+    height: 250px;
+   
+   
+}
+
+.cards-title{
+    margin-top: 130px;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1));
+
+}
+
+.cards-body{
+    background-image: url("https://brigate.vercel.app/img/project-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-list h1 {
+    font-weight: bold;
+}
+
+.product-list h1 strong{
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+.product-list p {
+    font-size:17px ;
+}
+.product-list p i{
+    color: orangered;
+    margin-left: 5px;
+    margin-right: 7px;
+}
+
+.containe{
+    width: 900px;
+    margin: auto;
+}
+#comp-ser{
+    background-image: url("https://brigate.vercel.app/img/customerNum.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+
+}
+
+
+.col-3{
+    padding-top: 50px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 0px;
+    
+}
+
+.col-3 i{
+
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.col-3 h1{
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.col-3 h6{
+    padding-bottom: 50px;
+}
+
+.news i{
+    padding: 10px;
+    color: orangered;
+    font-size: 25px;
+}
+.news h5{
+    padding: 18px 0px;
+    font-weight: 700;
+ }
+ 
+.news p{
+   font-size: medium;
+}
+
+#more{
+    color: orangered;
+    padding-bottom: 20px;
+}
+
+.col-4 img{
+    transition: 0.5s;
+}
+
+.col-4 img:hover{
+  transform: scaleY(1.1);
+}
+
+.about h3{
+  
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.about{
+    text-align: justify;
+}
+
+.about p{
+    font-size: small;
+    letter-spacing: 1.5px;
+    padding-bottom: 30px;
+}
+
+.about i{
+    font-size: 20px;
+    padding: 0px 25px;
+    padding-left: 0px;
+}
+
+.contacts h3{
+  
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.home i{
+    float: left;
+    font-size: 15px;
+    color: orangered;
+    margin-right: 20px;
+}
+
+.home p{
+    text-align: justify;
+    letter-spacing: 1.5px;
+    
+}
+
+.ctn-n i{
+    float: left;
+    font-size: 15px;
+    color: orangered;
+    margin-right: 20px;
+}
+
+.ctn-n p{
+    text-align: justify;
+    letter-spacing: 1.5px;
+    
+}
+
+.email i{
+    float: left;
+    font-size: 15px;
+    color: orangered;
+    margin-right: 20px;
+}
+
+.email p{
+    text-align: justify;
+    letter-spacing: 1.5px;
+}
+
+.useful{
+    text-align: justify;
+}
+.useful h3{
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.useful li{
+    list-style-type: none;
+    padding: 5px;
+    transition: 0.4s;
+    border-bottom: 1px #777 dashed;
+    padding-bottom: 10px;
+}
+
+.useful li i{
+    font-size: small;
+    padding-right: 10px;
+    transition: 0.4s;
+
+    
+}
+
+.useful li:hover{
+    color: orangered;
+}
+
+#lnk:hover{
+  color: orangered;
+}
+
+.recent{
+    text-align: justify;
+    overflow: hidden;
+}
+
+.recent h3{
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.div8{
+    float: left;
+    width: 80px;
+    background-color: #333;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.div8 h2{
+   font-size: 20px;
+  
+}
+
+.div9{
+   float: right;
+   width: 160px;
+   margin-left: 10px;
+   padding: 1px;
+
+    
+}
+
+
+.div9 h6{
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+     
+ }
+
+ .div9 p i{
+    font-size: small;
+    padding: 0px 10px;
+    color: #777;
+ }
+
+ .div9 p{
+    font-size: small;
+    color: #777;
+ }
+
+ .div10{
+    padding-bottom: 10px;
+ }
+
+ #footer{
+   box-sizing: border-box;
+   border-bottom: 1px #999 solid;
+ }
+
+ #copy{
+    background-color: #111;
+    color: white;
+    padding: 20px;
+ }
+
+ #last-btn{
+    float: right;
+    margin-right: 80px;
+ }
+
+ #last-btn li{
+    float: left;
+    list-style-type: none;
+    margin-right: 12px;
+    padding: 0px 10px;
+ }
+
+ #last-btn li a{
+   
+    color: #999;
+    font-size: 15px;
+    text-decoration: none;
+ }
+
+
+#copy-right{
+    padding: 10px;
+    text-align: center;
+}
+#copy-right a{
+  font-size: x-large;
+  color: orange;
+}
+
+.bg-info{
+    border-radius: 5px;
+}
+
+.inputboxs{
+    position: relative;
+}
+
+.inputboxs input:first-child{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.submit{
+    width: 40%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 1000px;
+    background-color: #000;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+}   
+
+.subscriber h3{
+    font-weight: 700;
+    padding: 20px;
+}
+
+.calle h3{
+    font-weight: 700;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.calle p{
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.follow h3{
+    font-weight: 700;
+    padding: 20px;
+}
+
+.follow{
+   
+}
+
+.follow li{
+    list-style: none;
+    float: left;
+    padding: 10px;
+    border: 1px white solid;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.follow li i{
+    font-size: 20px;
+    
+   
+}
+
+.follow li:hover{
+    background-color: orangered;
+    color: white ;
+    cursor: pointer;
+}
+
+#section{
+    display: flex;
+    position: relative;
+    top: 55px;
+}
+
+.nav-contents{
+    display: inline;
+    position: relative;
+}
+
+.nav-content{
+    position: absolute;
+    top: 40px;
+    display: none;
+    max-width: 100%;
+    margin-left: 100px;
+    text-transform: uppercase;
+    
+}
+
+.nav-content li{
+    background-color: orchid;
+    padding: 50px;
+    max-width: 100px;
+    padding-bottom: 10px;
+}
+
+.nav-contents:hover .nav-content{
+    display: block;
+}
+
+.nav-content li{
+    display: block;
+}
+
+.nav-content:hover{
+    color: white;
+
+
+}
+
+.nav-content li:hover{
+    padding-left: 10px;
+}
+.nav-link{
+    display: flex;
+    display: block;
+    position: relative;
+}
